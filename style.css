@@ -1,0 +1,65 @@
+/*
+Theme Name: 4Spannen
+Theme URI: http://checkup.meltemhastanesi.com
+Description: Theme 4spannen / bootstrap , less , jquery
+Author: Yusuf Demir
+Author URI: http://ysfdmr.com/
+Version: 1.0
+*/
+ *{
+    /* Firefox */
+    -moz-transition: all 0.5s ease-in;
+    /* WebKit */
+    -webkit-transition: all 0.5s ease-in;
+    /* Opera */
+    -o-transition: all 0.5s ease-in;
+    /* Standard */
+    transition: all 0.5s ease-in;
+	}
+	
+h1	{font-size:26px; margin:10px 0px;}
+h2	{font-size:24px; margin:10px 0px;}
+h3	{font-size:22px; margin:10px 0px;}
+h4	{font-size:20px; margin:10px 0px;}
+h5	{font-size:18px; margin:10px 0px;}
+h6	{font-size:16px; margin:10px 0px;}
+html{margin:0;padding:0;}
+body{margin:0;padding:0;background-color:#ecf0f1;}
+
+.container-wrapper{float:left;width:100%;}
+.container{
+	width:1200px !important;
+	padding:0px ;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	min-height:400px;
+	}
+
+.header-wrapper		{float:left;width:100%;}
+.menu-wrapper		{float:left;width:100%;height: 80px;background-color:#ffffff;border-bottom: 2px solid #c2c5c5;margin-bottom: 20px;}
+.menu				{width:1200px;padding:0px;margin:0 auto;box-sizing:border-box;-moz-box-sizing:border-box;min-height:400px;}
+	
+.contents			{float:left;width:800px;min-height:200px;margin-right:20px;}
+.sidebar			{float:left;width:380px;min-height:200px;}
+
+.post				{float:left;width:800px;min-height:100px;background-color:#FFF;	box-sizing:border-box;-moz-box-sizing:border-box;
+					 border-radius:5px;border:1px solid #EAEFF0;border-bottom:2px solid #D1CCCC; color:#999999;padding:0px;margin-bottom: 20px;}
+
+/*POST LEFT_INFO*/
+.post .left-info 				{float:left;width:98px;min-height:100px;box-sizing:border-box;-moz-box-sizing:border-box;padding:20px 20px 20px 20px;
+								 text-align:center;}
+.post .left-info .categories	{border-top: 1px solid #D1CCCC;margin-top: 10px;padding-top: 10px;font-size: 12px;width: 58px;}
+		/*Auth - Pic.*/
+.post .left-info > a > img		{-webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px;border:1px solid #D1CCCC;}
+
+
+/*POST CONTENT*/
+.post .content	 				{float:left;width:600px;min-height:100px;padding:20px 20px 20px 20px;}
+.post .content > h3				{color:rgb(80, 78, 78); padding:0px; margin:0px;margin-bottom: 10px;}
+
+
+/*POST RIGHT INFO*/
+.post .right-info 						{float:left;width:98px;min-height:100px;box-sizing:border-box;-moz-box-sizing:border-box;
+								 		 text-align:center;border-left:0px solid #EAEFF0;border-bottom: 1px solid #EAEFF0;}
+.post .right-info > .post-type-icon		{font-size: 50px;padding: 20px;border-bottom: 1px solid #EAEFF0;width: 100px;}
+.post .right-info > .review				{text-align:left; padding:10px;}
