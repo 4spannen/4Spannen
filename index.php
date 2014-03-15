@@ -47,6 +47,18 @@
             </div><!--END L-INFO-->
             
             <div class="content">
+                <!--VİDEO TEST-->
+                <?php 
+					$content = get_post_meta($post->ID, '_format_video_embed', true);
+					$content = preg_replace('#\<iframe(.*?)\ssrc\=\"(.*?)\"(.*?)\>#i', '<iframe$1 src="$2?wmode=opaque"$3>', $content);
+					$content = preg_replace('#\<iframe(.*?)\ssrc\=\"(.*?)\?(.*?)\?(.*?)\"(.*?)\>#i', '<iframe$1 src="$2?$3&$4"$5>', $content);
+					
+					if(!empty($content)){ ?>
+					<div class="entry-video">
+				<?php echo $content; ?>
+					</div>
+				<?php } ?>
+                <!--VİDEO TEST END-->
         		<a href="<?php the_permalink(); ?>"><h3><?php the_title();?></h3></a>
                 <div class="text"><?php the_excerpt_max_charlength(240);?>
                     <a href="<?php the_permalink(); ?>"> Devamını oku <i class="glyphicon glyphicon-arrow-right"></i> </a>
